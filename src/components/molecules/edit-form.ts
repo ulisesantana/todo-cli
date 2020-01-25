@@ -1,5 +1,5 @@
-import {inputText, inputSelect} from '../components'
-import {Todo} from '../entities/todo'
+import {inputText, inputSelect} from '../atoms'
+import {Todo} from '../../entities/todo'
 
 const todosToChoices = ({id, title}: Todo) => ({title,
   value: id,

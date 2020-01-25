@@ -1,11 +1,15 @@
 language: node_js
 node_js:
   - node
-
 cache: yarn
-
-script:
-  - ./bin/run --version
-  - ./bin/run --help
+scripts:
+  - "./bin/run --version"
+  - "./bin/run --help"
   - yarn run test
-
+deploy:
+  provider: npm
+  email: ulisesantana@gmail.com
+  api_key:
+    secure: BceX9jmcAUN2G5k+0AyhtHxmKVsGT8oe9dgmhog0C9ZRSwEa3TempnjmSXfHknyWjzLixtBoh4/qy3U1+KyRxASZHUhV02WPrFsz9cR4RCPhU0XMPmOdGrBQRnFSstRe98OrrrguMwdBkRX5eitTH32o89W2xftfY09Nq5PXr9g+Ey5qp/UTmdnVD9ZaFUDZdCdQOR046PXcyUwPHufvscIDb+jOjFUMtu8TqXZkTah9eST6q4fQ0bATQOWB1XhUqmsrK/kQJ4cOttnp7C+kBPp9scdVZQIfah74guj+M7b+JsGRJeSQAU2xS+QF/yQwxsFm75RCTB/nXjzMdv+jihhj7TZeJIYFGFLac2z9iBb3I6Qd9Z4iwOd8WmC7qeylFx/jCQCQbfWttwSH007Aj5zGIszTX3YtfL2gbKNQbKz8Qfl2Un0Bm5I0Uah6LnWiUYGJxtEICrhngyYfEUFRWiZb65HFOtlURNMM4OOLZ2wX4OFe8S8IJ0MNvpD80UCgyw7tmyeXpkOXfeb0xRs1A9y3gAIS6o/I2T6PL0hgFsZYyHdRMlGyGx5/uG8oAX6irgqF8y9Np5RAQ7ABLANl+oe/djz5+BIWj7qXIMk00zf/5ALThK9EzFWbyFs5SMfJ2xVp2dbjxnid9OquVSWaZ7qY2ONT5RfRepveUACd2uY=
+  on:
+    repo: ulisesantana/todo-cli
