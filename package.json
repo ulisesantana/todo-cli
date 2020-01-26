@@ -1,7 +1,7 @@
 {
   "name": "todo-cli",
   "description": "A dead simple todo app for your terminal.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Ulises Santana @ulisesantana",
   "bin": {
     "todo": "./bin/run"

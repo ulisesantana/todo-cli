@@ -19,7 +19,7 @@ $ npm install -g todo-cli
 $ todo COMMAND
 running command...
 $ todo (-v|--version|version)
-todo-cli/0.0.0 darwin-x64 node-v12.13.0
+todo-cli/1.0.0 darwin-x64 node-v12.13.0
 $ todo --help [COMMAND]
 USAGE
   $ todo COMMAND
